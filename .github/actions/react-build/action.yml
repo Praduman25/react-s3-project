@@ -1,0 +1,16 @@
+name: "React Build Action"
+
+description: "Install dependencies and build React application"
+
+runs:
+  using: "composite"
+
+  steps:
+
+    - name: Install Dependencies
+      run: npm install
+      shell: bash
+
+    - name: Build React App
+      run: npm run build
+      shell: bash
